@@ -33,6 +33,11 @@ To start a harvester only node pass
 -e harvester="true" -e farmer_address="addres.of.farmer" -e farmer_port="portnumber"
 ```
 
+In harvester mode, you can specify where the farmer certificate are to have the harvester certificates generated
+```
+-e harvester="true" -e farmer_address="addres.of.farmer" -e farmer_port="portnumber" -e farmer_ca_directory="/path/in/container"
+```
+
 #### or run commands externally with venv (this works for most chia XYZ commands)
 ```
 docker exec -it chia venv/bin/chia plots add -d /plots
